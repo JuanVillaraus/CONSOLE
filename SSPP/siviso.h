@@ -9,11 +9,11 @@
 #include <QUdpSocket>
 
 //---------headers for the use of postgres
-#include<QtSql/QSql>
-#include<QtSql/QSqlDatabase>
-#include<QtSql/QSqlQuery>
-#include<QtSql/QSqlRecord>
-#include<QtSql/QSqlField>
+//#include<QtSql/QSql>
+//#include<QtSql/QSqlDatabase>
+//#include<QtSql/QSqlQuery>
+//#include<QtSql/QSqlRecord>
+//#include<QtSql/QSqlField>
 #include<QStandardItemModel>
 #include"dbasepostgresql.h"
 //---------finish declarations of the headers
