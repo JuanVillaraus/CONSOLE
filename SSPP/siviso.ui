@@ -792,22 +792,6 @@ Verdadero</string>
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="DespTac">
-     <property name="geometry">
-      <rect>
-       <x>-7</x>
-       <y>-4</y>
-       <width>531</width>
-       <height>461</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="resource.qrc">:/new/prefix1/resource/costa.JPG</pixmap>
-     </property>
-    </widget>
    </widget>
    <widget class="QFrame" name="frame_8">
     <property name="geometry">
@@ -1064,7 +1048,7 @@ Verdadero</string>
      <x>0</x>
      <y>0</y>
      <width>1024</width>
-     <height>25</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

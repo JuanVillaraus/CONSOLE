@@ -28,17 +28,20 @@ SOURCES += main.cpp\
     ppi.cpp \
     signal.cpp \
     dbasepostgresql.cpp \
-    wconfig.cpp
+    wconfig.cpp \
+    FrmPortable.cpp
 
 HEADERS  += siviso.h \
     blanco.h \
     ppi.h \
     signal.h \
     dbasepostgresql.h \
-    wconfig.h
+    wconfig.h \
+    FrmPortable.h
 
 FORMS    += siviso.ui \
-    wconfig.ui
+    wconfig.ui \
+    FrmPortable.ui
 
 RESOURCES += \
     resource.qrc
