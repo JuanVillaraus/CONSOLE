@@ -7,6 +7,8 @@
 
 QT       += core gui sql
 QT       += network
+QT       += serialport
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -21,6 +23,8 @@ OBJECTS_DIR = $$BUILDDIR/obj
 MOC_DIR= $$BUILDDIR/moc
 UI_HEADERS_DIR = src/ui/generated
 
+CONFIG +=console
+CONFIG -=app_bundle
 
 SOURCES += main.cpp\
         siviso.cpp \
@@ -29,7 +33,8 @@ SOURCES += main.cpp\
     signal.cpp \
     dbasepostgresql.cpp \
     wconfig.cpp \
-    FrmPortable.cpp
+    FrmPortable.cpp \
+    serialportreader.cpp
 
 HEADERS  += siviso.h \
     blanco.h \
@@ -37,7 +42,8 @@ HEADERS  += siviso.h \
     signal.h \
     dbasepostgresql.h \
     wconfig.h \
-    FrmPortable.h
+    FrmPortable.h \
+    serialportreader.h
 
 FORMS    += siviso.ui \
     wconfig.ui \
