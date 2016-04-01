@@ -7,10 +7,12 @@
 
 QT       += core gui sql
 QT       += network
-QT       += serialport
 
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+greaterThan(QT_MAJOR_VERSION, 4){ QT += widgets }
+
+
 
 TARGET = SSPP
 TEMPLATE = app
@@ -33,8 +35,7 @@ SOURCES += main.cpp\
     signal.cpp \
     dbasepostgresql.cpp \
     wconfig.cpp \
-    FrmPortable.cpp \
-    serialportreader.cpp
+    FrmPortable.cpp
 
 HEADERS  += siviso.h \
     blanco.h \
@@ -42,8 +43,7 @@ HEADERS  += siviso.h \
     signal.h \
     dbasepostgresql.h \
     wconfig.h \
-    FrmPortable.h \
-    serialportreader.h
+    FrmPortable.h
 
 FORMS    += siviso.ui \
     wconfig.ui \
@@ -51,3 +51,7 @@ FORMS    += siviso.ui \
 
 RESOURCES += \
     resource.qrc
+
+HEADERS +=
+
+SOURCES +=

@@ -1,9 +1,8 @@
 #include "FrmPortable.h"
 #include "ui_FrmPortable.h"
 #include "qdir.h"
-#include "serialportreader.h"
 
-#include <QtSerialPort/QSerialPort>
+
 
 #include <QTextStream>
 #include <QCoreApplication>
@@ -16,19 +15,6 @@ FrmPortable::FrmPortable(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    QTextStream standardOutput(stdout);
-    QSerialPort serialPort;
-    QString serialPortName = "COM4"; //ttys2 baudage 4800 in linux use COM4 in windows
-
-    serialPort.setPortName(serialPortName);
-    serialPort.setBaudRate(8600);
-
-    if (!serialPort.open(QIODevice::ReadOnly))
-    {
-        standardOutput << QObject::tr("Failed to open port %1, error: %2").arg(serialPortName).arg(serialPort.errorString()) << endl;
-                return 1;
-    }
-    SerialPortReader serialportreader(&serialPort);
 
 }
 
