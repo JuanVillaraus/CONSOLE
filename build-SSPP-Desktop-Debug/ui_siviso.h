@@ -85,7 +85,6 @@ public:
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
     QFrame *frame_5;
-    QLabel *DespTac;
     QFrame *frame_8;
     QLabel *label_24;
     QLabel *label_25;
@@ -313,10 +312,6 @@ public:
         frame_5->setGeometry(QRect(500, 250, 521, 451));
         frame_5->setFrameShape(QFrame::StyledPanel);
         frame_5->setFrameShadow(QFrame::Raised);
-        DespTac = new QLabel(frame_5);
-        DespTac->setObjectName(QStringLiteral("DespTac"));
-        DespTac->setGeometry(QRect(-7, -4, 531, 461));
-        DespTac->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/resource/costa.JPG")));
         frame_8 = new QFrame(centralWidget);
         frame_8->setObjectName(QStringLiteral("frame_8"));
         frame_8->setGeometry(QRect(870, 90, 141, 151));
@@ -387,7 +382,7 @@ public:
         frame_8->raise();
         menuBar = new QMenuBar(siviso);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1024, 25));
+        menuBar->setGeometry(QRect(0, 0, 1024, 21));
         siviso->setMenuBar(menuBar);
         mainToolBar = new QToolBar(siviso);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -457,7 +452,6 @@ public:
         bb->setText(QApplication::translate("siviso", "Bb", 0));
         pushButton_2->setText(QApplication::translate("siviso", "ver info signal", 0));
         pushButton_3->setText(QApplication::translate("siviso", "send", 0));
-        DespTac->setText(QString());
         label_24->setText(QApplication::translate("siviso", "<html><head/><body><p align=\"center\"><span style=\" font-size:6pt; font-weight:600;\">Plataforma</span></p></body></html>", 0));
         label_25->setText(QApplication::translate("siviso", "<html><head/><body><p><span style=\" font-size:6pt;\">Nombre:</span></p></body></html>", 0));
         label_26->setText(QApplication::translate("siviso", "<html><head/><body><p><span style=\" font-size:6pt;\">Profundidad:</span></p></body></html>", 0));
